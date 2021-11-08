@@ -9,7 +9,17 @@ tasks:
 ports:
 - port: 8080
   onOpen: open-preview
+- port: 8005
+  onOpen: ignore
+- port: 8887
+  onOpen: ignore
+- port: 38015
+  onOpen: ignore
+- port: 45213
+  onOpen: ignore
+- port: 7800
+  onOpen: ignore
 
-vscode:
-  extensions:
-    - redhat.java
+#vscode:
+#  extensions:
+#    - redhat.java

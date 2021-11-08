@@ -1,3 +1,5 @@
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/markmclaren/uPortal-start-gitpod)
+
 ![uPortal logo](docs/en/images/uPortal-logo.jpg)
 
 [![build status](https://github.com/uPortal-Project/uPortal-start/workflows/CI/badge.svg?branch=master)](https://github.com/uPortal-Project/uPortal-start/actions)

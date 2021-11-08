@@ -1,2 +1,4 @@
+image:
+  file: .gitpod.Dockerfile
 tasks:
-  - init: sdk install java 8.0.292.hs-adpt && ./gradlew build
+  - init: ./gradlew build

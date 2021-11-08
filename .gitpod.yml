@@ -3,7 +3,7 @@ image:
 
 tasks:
   - init: ./gradlew portalInit
-  command: ./gradlew tomcatStart
+    command: ./gradlew tomcatStart
 
 # exposed ports
 ports:

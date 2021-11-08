@@ -1,2 +1,2 @@
 tasks:
-  - init: ./gradlew build
+  - init: sdk install java 8.0.292.hs-adpt && ./gradlew build

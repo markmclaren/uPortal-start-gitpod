@@ -2,13 +2,13 @@ image:
   file: .gitpod.Dockerfile
 
 tasks:
-#  - init: ./gradlew portalInit
-#    command: ./gradlew tomcatStart
-  - command: |
+  - init: ./gradlew portalInit
+    command: |
       chmod +x create-properties.sh
       mkdir portal
       ./create-properties.sh > portal/global.properties
       export PORTAL_HOME=$(pwd)/portal
+      ./gradlew tomcatStart
 
 # exposed ports
 ports:

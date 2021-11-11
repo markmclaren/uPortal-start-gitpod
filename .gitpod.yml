@@ -6,8 +6,8 @@ tasks:
   - command: |
       mkdir portal
       export PORTAL_HOME=$(pwd)/portal
-      export PORTAL_URL=$(gp url 8080)      
-      cat <<-EOF > ./portal/global.properties
+      export PORTAL_URL=$(gp url 8080)
+      cat << EOF > ./portal/global.properties
       ## Portal Server
       portal.protocol=https
       portal.server=${PORTAL_URL:8}
@@ -17,7 +17,7 @@ tasks:
       cas.server=${PORTAL_URL:8}
       cas.context=/cas
       EOF
-      cat <<-EOF > ./portal/cas.properties 
+      cat << EOF > ./portal/cas.properties 
       # Services Management Web UI Security
       server.name=${PORTAL_URL}
       server.prefix=\${server.name}/cas

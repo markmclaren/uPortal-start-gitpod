@@ -7,7 +7,7 @@ tasks:
   - command: |
       chmod +x create-properties.sh
       mkdir portal
-      ./create-properties.sh portal/global.properties
+      ./create-properties.sh > portal/global.properties
       export PORTAL_HOME=$(pwd)/portal
 
 # exposed ports

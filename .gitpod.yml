@@ -7,7 +7,6 @@ tasks:
       mkdir portal
       export PORTAL_HOME=$(pwd)/portal
       export PORTAL_URL=$(gp url 8080)      
-
       cat <<-EOF > ./portal/global.properties
       ## Portal Server
       portal.protocol=https
@@ -18,7 +17,6 @@ tasks:
       cas.server=${PORTAL_URL:8}
       cas.context=/cas
       EOF
-
       cat <<-EOF > ./portal/cas.properties 
       # Services Management Web UI Security
       server.name=${PORTAL_URL}
@@ -38,7 +36,6 @@ tasks:
       # hostname of the machine running the CAS node, but it could be any label so long as it is unique in the cluster.
       host.name=${PORTAL_URL:8}
       EOF   
-         
       #./gradlew tomcatStart
 # exposed ports
 ports:

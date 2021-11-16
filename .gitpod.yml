@@ -2,8 +2,9 @@ image:
   file: .gitpod.Dockerfile
 
 tasks:
-  - init: ./gradlew portalInit
-    command: |
+  #- init: ./gradlew portalInit
+  - command: |
+      ./gradlew portalInit
       mkdir portal
       export PORTAL_HOME=$(pwd)/portal
       export PORTAL_URL=$(gp url 8080)
